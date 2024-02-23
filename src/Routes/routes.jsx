@@ -23,6 +23,7 @@ import Messages from "../pages/Messages/Messages";
 import MediaCenter from "../pages/MediaCenter/MediaCenter";
 import AccountSettings from "../pages/AccountSettings/AccountSettings";
 import Upload from "../pages/Upload/Upload";
+import WallpaperSidebar from "../components/wallpapers-ui/WallpaperSidebar";
 
 export const router = createBrowserRouter([
   {
@@ -117,5 +118,9 @@ export const router = createBrowserRouter([
   {
     path: "/wallpaper",
     element: <WallPaper />,
+  },
+  {
+    path: "/ok",
+    element: <WallpaperSidebar />,
   },
 ]);

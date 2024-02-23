@@ -16,9 +16,7 @@ const ForgetEmail = () => {
             <div className="col-md-6 position-relative">
               <div className="auth_iInfoBtn">{iInfo}</div>
               <div className="imgLogin forgetpass_bg">
-                <p className="text-center d-none d-md-block">
-                  Forgot your e-mail?
-                </p>
+                <p className="text-center ">Forgot your e-mail?</p>
               </div>
             </div>
             <div className="col-md-6">
@@ -45,12 +43,12 @@ const ForgetEmail = () => {
                     type="text"
                     name="username"
                     id="username"
-                    placeholder="We can’t believe you forgot"
+                    placeholder="We can’t believe you forgot =["
                   />
 
                   <div className="text-center mt-4">
                     <button type="submit" className="darkBtn mb-2">
-                      <Link className="text-white" href="/confirmationEmail">
+                      <Link className="text-white" to="/confirmationEmail">
                         Reset
                       </Link>
                     </button>

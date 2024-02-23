@@ -13,6 +13,11 @@
   border-radius: 10px;
 }
 
+.shareWallpaper {
+  position: absolute;
+  bottom: 70px;
+}
+
 /* .addLibrary img,
 .like img {
     height: 25px;

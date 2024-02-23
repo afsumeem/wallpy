@@ -17,9 +17,7 @@ const Forgetpassword = () => {
             <div className="col-md-6 position-relative">
               <div className="auth_iInfoBtn">{iInfo}</div>
               <div className="imgLogin forgetpass_bg">
-                <p className="text-center d-none d-md-block">
-                  Forgot your password?
-                </p>
+                <p className="text-center ">Forgot your password?</p>
               </div>
             </div>
             <div className="col-md-6">

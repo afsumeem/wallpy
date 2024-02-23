@@ -12,10 +12,12 @@ import AuthHeader from "../../components/common-ui/header/AuthHeader";
 // import Swal from "sweetalert2";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
-  const navigate = useNavigate();
+  const [errorMessage, setErrorMessage] = useState("");
+
   const handleLogin = () => {
     if (email && password) {
       const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
@@ -27,9 +29,11 @@ const Login = () => {
         localStorage.setItem("loggedIn", "true");
         setLoggedIn(true);
         window.alert("Login successfully");
-        navigate("/");
+        // navigate("/");
       } else {
-        window.alert("User not found. Please register first.");
+        setErrorMessage(
+          "Sorry, the username or password you entered is incorrect. "
+        );
       }
     }
   };
@@ -91,6 +95,7 @@ const Login = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
+                  <p>{errorMessage}</p>
                   <div className="text-center mt-4">
                     <button type="submit" className="darkBtn mb-2">
                       {/* <Link className="text-white" to="/login"> */}

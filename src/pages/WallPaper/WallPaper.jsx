@@ -10,11 +10,15 @@ import instagram from "../../assets/instagram.png";
 import left_light from "../../assets/left_light.png";
 import filter_alt from "../../assets/filter_alt.png";
 import photo_library from "../../assets/photo_library.png";
-import likedgray from "../../assets/likedgray.png";
+import likedgray from "../../assets/likedGray.svg";
 import wallpaper from "../../assets/wallpaper.png";
 import wallpaper1 from "../../assets/wallpaper1.png";
 import wallpaper2 from "../../assets/wallpaper2.png";
-
+import link from "../../assets/link.png";
+import fb from "../../assets/fb.png";
+import whatsapp from "../../assets/whatsapp.png";
+import discord from "../../assets/discord.png";
+import email from "../../assets/email.png";
 import limg1 from "../../assets/images/wallpaper/limg1.png";
 import limg2 from "../../assets/images/wallpaper/limg2.png";
 import limg3 from "../../assets/images/wallpaper/limg3.png";
@@ -22,7 +26,7 @@ import limg3 from "../../assets/images/wallpaper/limg3.png";
 import Moon from "../../assets/Moon.png";
 import downArrow from "../../assets/downArrow.png";
 import arrow_down_light from "../../assets/arrow_down_light.png";
-import library_add from "../../assets/library_add.png";
+import library_add from "../../assets/library_add.svg";
 import { Link } from "react-router-dom";
 import WallpaperSidebar from "../../components/wallpapers-ui/WallpaperSidebar";
 import img from "../../assets/icons/mixer.png";
@@ -34,11 +38,14 @@ import {
   iSearch,
   iShare,
 } from "../../utils/icons/global_icons";
+import { Offcanvas } from "react-bootstrap";
 import download from "../../assets/icons/download.svg";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
 import HeaderDrawer from "../../components/common-ui/header/HeaderDrawer";
 import { AuthContext } from "../../context/AuthContext";
+import { iClose } from "../../utils/icons/global_icons";
+
 const items = [
   { id: 1, name: "Call of Duty" },
   { id: 2, name: "World of Warcraft" },
@@ -48,8 +55,20 @@ const items = [
 ];
 
 const WallPaper = () => {
-  const { open, setOpen } = useContext(AuthContext);
+  const [open, setOpen] = useState(false);
   const [openD, setOpenD] = useState(false);
+  const [showShareWallpaper, setShowShareWallpaper] = useState(false);
+  const [downloadIcon, setDownloadIcon] = useState(true);
+
+  const handleOpenShare = () => {
+    setShowShareWallpaper(true);
+    setDownloadIcon(false);
+  };
+
+  const handleCloseShare = () => {
+    setShowShareWallpaper(false);
+    setDownloadIcon(true);
+  };
   return (
     <div className="wallpaper_bg">
       <HeaderDrawer />
@@ -63,7 +82,7 @@ const WallPaper = () => {
             WPS
           </Link>
 
-          <svg
+          {/* <svg
             width="20"
             height="20"
             viewBox="0 0 20 20"
@@ -84,7 +103,7 @@ const WallPaper = () => {
               stroke-width="2"
               stroke-linecap="round"
             />
-          </svg>
+          </svg> */}
           <div className="position-relative wallPaper_search_container">
             <div
               style={{ top: "5px", left: "10px" }}
@@ -104,7 +123,7 @@ const WallPaper = () => {
           <img className="logo-img" src={profile} alt="" />
         </div>
         <button
-          onClick={() => setOpen(!open)}
+          onClick={() => setOpen(true)}
           className="navbar-toggler d-md-none"
           type="button"
         >
@@ -113,6 +132,54 @@ const WallPaper = () => {
           </span>
         </button>
       </div>
+
+      {/*  */}
+      <Offcanvas
+        show={open}
+        onHide={() => setOpen(false)}
+        className="h-100 w-100"
+        {...{
+          scroll: false,
+          backdrop: false,
+        }}
+        style={{ backgroundColor: "#121212", zIndex: 99999999 }}
+      >
+        <Offcanvas.Body
+          className="h-100 w-75 position-relative"
+          style={{ backgroundColor: "#121212" }}
+        >
+          <div className="d-flex justify-content-end align-items-center">
+            <button
+              onClick={() => setOpen(false)}
+              className=""
+              style={{ width: "40px", height: "40px" }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="27"
+                viewBox="0 0 27 27"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_127_330)">
+                  <path
+                    d="M11.3513 17.5387L12.9375 19.125L18.5625 13.5L12.9375 7.875L11.3513 9.46125L14.2537 12.375H3.375V14.625H14.2537L11.3513 17.5387ZM21.375 3.375H5.625C4.37625 3.375 3.375 4.3875 3.375 5.625V10.125H5.625V5.625H21.375V21.375H5.625V16.875H3.375V21.375C3.375 22.6125 4.37625 23.625 5.625 23.625H21.375C22.6125 23.625 23.625 22.6125 23.625 21.375V5.625C23.625 4.3875 22.6125 3.375 21.375 3.375Z"
+                    fill="#D9D9D9"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_127_330">
+                    <rect width="27" height="27" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <WallpaperSidebar />
+        </Offcanvas.Body>
+      </Offcanvas>
+
+      {/*  */}
       <div className="container wallPaper_mt">
         <div className="custom_Container">
           <div className="d-flex justify-content-center align-items-start gap-3 all_mb">
@@ -125,6 +192,7 @@ const WallPaper = () => {
                 style={{
                   backgroundColor: "rgba(0, 0, 0, 0.60)",
                   width: "fit-content",
+                  borderRadius: "5px",
                 }}
               >
                 {/* <img
@@ -134,7 +202,10 @@ const WallPaper = () => {
                   src={img}
                   alt=""
                 /> */}
-                <div className="addLibrary" style={{ borderRadius: "5px" }}>
+                <div
+                  className="addLibrary"
+                  style={{ borderRadius: "5px", opacity: "100%" }}
+                >
                   <button>
                     <span>
                       <img src={library_add} alt="Add Library" />
@@ -160,6 +231,7 @@ const WallPaper = () => {
                             src={photo_library}
                             alt="img"
                           />
+
                           {item?.name}
                         </button>
                       ))}
@@ -172,15 +244,61 @@ const WallPaper = () => {
                   </span>
                 </button>
               </div>
+
+              {/* share modal */}
+
+              {showShareWallpaper && (
+                <div className="shareProfile shareWallpaper d-flex flex-column gap-3 align-items-center">
+                  <div className="d-flex justify-content-between">
+                    <p className="fontBak">Share this wallpaper with friends</p>
+                    <button className=" px-3" onClick={handleCloseShare}>
+                      {iClose}
+                    </button>
+                  </div>
+                  <div className="d-flex justify-content-between align-items-center gap-4">
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={twitter} alt="Twitter" />X
+                    </button>
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={fb} alt="Facebook" />
+                      Facebook
+                    </button>
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={whatsapp} alt="WhatsApp" />
+                      WhatsApp
+                    </button>
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={discord} alt="Discord" />
+                      Discord
+                    </button>
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={email} alt="Email" />
+                      Email
+                    </button>
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={link} alt="Copy Link" />
+                      Copy Link
+                    </button>
+                  </div>
+                </div>
+              )}
+
               <div
-                className="w-100 position-absolute d-flex justify-content-between align-items-center"
+                className="w-100 position-absolute d-flex flex-row-reverse justify-content-between align-items-center"
                 style={{ bottom: "10px" }}
               >
-                <div className="home-bb" style={{ marginLeft: "20px" }}>
-                  <img width={24} src={download} alt="" />
-                </div>
-                <div className="home-bb">{iShare}</div>
+                <button className="home-bb" onClick={handleOpenShare}>
+                  {iShare}
+                </button>
+
+                {downloadIcon && (
+                  <div className="home-bb" style={{ marginLeft: "20px" }}>
+                    <img width={24} src={download} alt="" />
+                  </div>
+                )}
               </div>
+
+              {/*  */}
             </div>
           </div>
         </div>

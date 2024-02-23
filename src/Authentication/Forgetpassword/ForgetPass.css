@@ -6,15 +6,27 @@
   .forgetpass_bg {
     height: 171px;
   }
+
+  .forgetpass_bg p {
+    margin-top: -50px;
+  }
+
   .confirmation_bg {
     background-image: url("../../assets/staff2.png") !important;
+  }
+  .confirmation-community {
+    gap: 5px;
   }
 }
 
 /*  */
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   .confirmation_bg {
     background-image: url("../../assets/confirmation.png") !important;
+  }
+
+  .confirmation-community {
+    gap: 12px;
   }
 }
 
