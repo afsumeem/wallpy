@@ -2,13 +2,19 @@
   background-image: url("../../assets/forget.png");
 }
 
-.confirmation_bg {
-  background-image: url("../../assets/confirmation.png") !important;
-}
-
 @media only screen and (max-width: 425px) {
   .forgetpass_bg {
     height: 171px;
+  }
+  .confirmation_bg {
+    background-image: url("../../assets/staff2.png") !important;
+  }
+}
+
+/*  */
+@media only screen and (min-width: 425px) {
+  .confirmation_bg {
+    background-image: url("../../assets/confirmation.png") !important;
   }
 }
 

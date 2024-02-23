@@ -6,8 +6,10 @@ import Swal from "sweetalert2";
 import Header from "../../Shared/Header/Header";
 import { iInfo } from "../../utils/icons/global_icons";
 import AuthHeader from "../../components/common-ui/header/AuthHeader";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
   const initialFormData = {
     username: "",
     email: "",
@@ -26,6 +28,7 @@ const Register = () => {
     setUsers([...users, user]);
     setFormData(initialFormData);
     // Swal.fire("Registered successfully");
+    navigate("/confirmationEmail");
   };
   useEffect(() => {
     const savedUsers = JSON.parse(localStorage.getItem("users"));
@@ -45,7 +48,7 @@ const Register = () => {
           <h1 className="d-md-none register-p-title">THE WALLPAPER SOCIETY</h1>
           <div className="row brightBg px-1 py-3 px-md-3 py-md-4 mx-auto">
             <div className="col-md-6 position-relative">
-              {/* <div className="auth_iInfoBtn">{iInfo}</div> */}
+              <div className="auth_iInfoBtn">{iInfo}</div>
               <div className="imgLogin d-flex flex-column justify-content-between align-items-center">
                 <p className="d-none d-md-block">Welcome to the Society</p>
                 {/* <div className="text-center d-none d-md-block">

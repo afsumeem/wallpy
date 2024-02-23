@@ -15,6 +15,17 @@
   .login_bg {
     height: 171px;
   }
+  .login_bg {
+    background-image: url("../../assets/kitten.png");
+  }
+}
+
+/*  */
+
+@media only screen and (min-width: 426px) {
+  .login_bg {
+    background-image: url("../../assets/loginImg.png");
+  }
 }
 
 /* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
