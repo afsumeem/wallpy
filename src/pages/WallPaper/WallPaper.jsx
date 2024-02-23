@@ -54,6 +54,10 @@ const items = [
   { id: 3, name: "League of Legends" },
   { id: 4, name: "Anime" },
   { id: 5, name: "Landscapes" },
+  { id: 6, name: "World of Warcraft" },
+  { id: 7, name: "League of Legends" },
+  { id: 8, name: "Anime" },
+  { id: 9, name: "Landscapes" },
 ];
 
 const WallPaper = () => {
@@ -108,6 +112,9 @@ const WallPaper = () => {
     setBars(true);
     setLogo(false);
   };
+
+  //
+
   return (
     <div className="wallpaper_bg">
       <HeaderDrawer />
@@ -293,7 +300,10 @@ const WallPaper = () => {
                 /> */}
                 <div
                   className="addLibrary"
-                  style={{ borderRadius: "5px", opacity: "100%" }}
+                  style={{
+                    borderRadius: "5px",
+                    opacity: "100%",
+                  }}
                 >
                   {listCheck ? (
                     <button>
@@ -309,11 +319,11 @@ const WallPaper = () => {
                     </button>
                   )}
 
-                  <div className="libraryOption">
+                  <div className="libraryOption mt-2">
                     {!toggleInput ? (
                       <>
                         {/* add new collection */}
-                        <div className="search-collections justify-content-between d-flex align-items-center gap-2">
+                        <div className="search-collections justify-content-between d-flex align-items-center gap-2 mb-3">
                           <input
                             className="flex-grow w-100 px-1"
                             type="search"
@@ -330,7 +340,7 @@ const WallPaper = () => {
                     ) : (
                       /* search collection */
 
-                      <div className="search-collections justify-content-between d-flex align-items-center gap-2">
+                      <div className="search-collections justify-content-between d-flex align-items-center gap-2 mb-3">
                         <input
                           className="flex-grow w-100 px-1"
                           type="search"
@@ -342,12 +352,23 @@ const WallPaper = () => {
                       </div>
                     )}
 
-                    <div className="d-flex flex-column justify-content-start align-items-start">
+                    <div
+                      className="d-flex flex-column itemsContainer  align-items-start "
+                      style={{
+                        overflowY: "scroll",
+                        maxHeight: "180px",
+                        // width: "300px",
+                        scrollbarWidth: "thin",
+                        scrollbarColor:
+                          "rgba(255, 255, 255, 1) rgba(92, 92, 92, 1)",
+                      }}
+                    >
                       {items?.map((item, index) => (
                         <button
                           onClick={() => handleListCheck()}
                           key={index}
-                          className="collection-list border-bottom w-100"
+                          className="collection-list border-bottom w-75"
+                          style={{ fontSize: "12px", padding: "8px 0" }}
                         >
                           <img
                             className="img-fluid"
@@ -426,12 +447,29 @@ const WallPaper = () => {
                 className="w-100 position-absolute d-flex flex-row-reverse justify-content-between align-items-center"
                 style={{ bottom: "10px" }}
               >
-                <button className="home-bb" onClick={handleOpenShare}>
+                <button
+                  className="home-bb"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.6)",
+                    height: "30px",
+                    width: "30px",
+                  }}
+                  onClick={handleOpenShare}
+                >
                   {iShare}
                 </button>
 
                 {downloadIcon && (
-                  <div className="home-bb" style={{ marginLeft: "20px" }}>
+                  <div
+                    className="home-bb"
+                    style={{
+                      marginLeft: "20px",
+                      height: "50px",
+                      width: "50px",
+                      borderRadius: "7px",
+                      backgroundColor: "rgba(0, 0, 0, 0.6)",
+                    }}
+                  >
                     <img width={24} src={download} alt="" />
                   </div>
                 )}
