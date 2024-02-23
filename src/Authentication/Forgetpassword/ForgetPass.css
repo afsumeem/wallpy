@@ -1,0 +1,28 @@
+.forgetpass_bg {
+  background-image: url("../../assets/forget.png");
+}
+
+.confirmation_bg {
+  background-image: url("../../assets/confirmation.png") !important;
+}
+
+@media only screen and (max-width: 425px) {
+  .forgetpass_bg {
+    height: 171px;
+  }
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .forgetpass_bg {
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets */
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}

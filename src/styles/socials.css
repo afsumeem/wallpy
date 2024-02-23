@@ -1,0 +1,109 @@
+.socials-container .socials-title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.socials-container img {
+  width: 100%;
+  min-height: 72px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.socials-img-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.178) 0%,
+    rgba(0, 0, 0, 0.219) 100%
+  );
+}
+
+.socials_images_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  row-gap: 36px;
+  margin-top: 36px;
+}
+
+.socials_images_container img {
+  width: 573px;
+  height: 210px !important;
+  border-radius: 5px;
+}
+.social_banner {
+  width: 100%;
+  max-height: 294px;
+  height: 100%;
+}
+
+.social_search {
+  min-width: 771px;
+  height: 45px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.social_search input {
+  width: 100%;
+}
+
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 425px) {
+  .socials_images_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 7px;
+    row-gap: 28px;
+    margin-top: 30px;
+  }
+  .socials_images_container img {
+    width: 130px;
+    height: 72px !important;
+    border-radius: 10px;
+  }
+  .social_banner {
+    width: 100%;
+    max-height: 133px;
+    height: 100%;
+  }
+  .social_search {
+    display: none;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .social_search {
+    display: none !important;
+  }
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .social_search {
+    display: none !important;
+  }
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}
+
+/* for container */
+@media only screen and (min-width: 1024px) and (max-width: 1470px) {
+  .social_search {
+    min-width: 500px;
+    height: 45px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,0 +1,248 @@
+.account-verify-container .title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.account-verify-container .account-verify-form-section {
+  min-height: 780px;
+  border-radius: 10px;
+  background: hsla(0, 0%, 0%, 0.158);
+  padding: 40px 0;
+}
+
+.account-verify-form-section h2 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.account-verify-form-section p {
+  color: #939393;
+  font-family: Lato;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* account-verify-tab-container */
+.account-verify-tab-container {
+  width: 137px;
+  height: 45px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 24px auto 36px auto;
+}
+
+.type_of_req {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.account-verify-tab-container .btn-active {
+  width: 65px;
+  height: 33px;
+  border-radius: 100px;
+  background: #0ab745;
+}
+
+.account-verify-tab-container button {
+  color: #fff !important;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 65px;
+  height: 33px;
+}
+
+.account-verify-input {
+  height: 43px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
+  color: #939393;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.account-verify-img-input {
+  max-width: 563px;
+  max-height: 138px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.ac-verify-brand-tab-p {
+  color: #939393;
+  font-family: Lato;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.account-verify-img-input h1 {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.account-verify-img-input button {
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 10px;
+  opacity: 0.5;
+  background: #000;
+  width: 103px;
+  height: 28px;
+}
+
+.account-verify-submit-btn {
+  width: 129px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #2924ff;
+  color: #c4c4c4;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 26px;
+}
+
+.account-verify-thank {
+  color: #fff;
+  text-align: center;
+  font-family: Bakbak One;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 725px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.brand_artist_title {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 26px;
+}
+
+.verified_profile_title {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 34px;
+  margin-bottom: 29px;
+}
+
+.proof_identity {
+  margin-top: 29px;
+  margin-bottom: 23px;
+}
+.rq_verify_thanks_part {
+  height: 780px;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 425px) {
+  .account-verify-container .account-verify-form-section {
+    border-radius: 10px;
+    background: transparent;
+    padding: 15px 0 !important;
+  }
+  .account-verify-tab-container {
+    margin: 29px auto 37px auto !important;
+  }
+  .type_of_req {
+    font-size: 12px !important;
+  }
+  .brand_artist_title,
+  .verified_profile_title {
+    font-size: 12px !important;
+  }
+  .proof_identity {
+    margin-top: 27px;
+    margin-bottom: 19px;
+    font-size: 12px;
+  }
+  .ac-verify-brand-tab-p {
+    text-align: center;
+  }
+  .account-verify-thank {
+    font-size: 12px !important;
+    margin: 0 auto;
+    max-width: 356px;
+  }
+  .account-verify-submit-btn {
+    width: 129px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #2924ff;
+    color: #c4c4c4;
+    font-family: Bakbak One;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 50px;
+  }
+}
+@media only screen and(min-width: 426px) and (max-width: 767px) {
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}

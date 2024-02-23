@@ -1,0 +1,461 @@
+/* Profile Page Start */
+
+.cover_photo {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.profile_photo {
+  width: 143px !important;
+  height: 143px !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.profile_photo img {
+  width: 125px !important;
+  height: 125px !important;
+  /* border-radius: 125px; */
+}
+
+.coverImg {
+  position: relative;
+  margin-bottom: 23px;
+}
+
+.coverImg button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.profile-container {
+  position: absolute;
+  left: 0px;
+  bottom: -80px;
+  display: flex;
+  align-items: end;
+  gap: 8px;
+}
+
+.profile-container h3 {
+  margin-bottom: 30px;
+}
+
+.profile_name {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile_bio {
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profileDetail {
+  padding-left: 114px;
+  margin-bottom: 85px;
+}
+
+.profileDetail span {
+  color: #939393;
+  font-size: 15px;
+}
+
+.update_follower {
+  padding: 14px 24px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.update_follower p,
+.update_follower p span {
+  font-size: 12px;
+}
+
+.profileDetail button {
+  padding: 9px 25px;
+  border-radius: 10px;
+  background: #ccc;
+  color: #4e4e4e;
+  font-size: 12px;
+  transition: 0.4s ease-in-out;
+}
+
+.profileDetail button:hover {
+  background: #e0e0e0;
+}
+
+.profileDetail .msgBtn {
+  padding: 6px 11px;
+}
+
+.share img {
+  max-width: 18px;
+  max-height: 18px;
+  transition: 0.4s ease-in-out;
+  opacity: 0.85;
+}
+
+.share img:hover {
+  opacity: 1;
+}
+
+.profile_images {
+  margin-top: 53px;
+}
+.profile_search {
+  position: relative;
+  z-index: 40;
+  max-width: 771px !important;
+  height: 45px;
+  background-image: url("../assets/Search.png");
+  background-repeat: no-repeat;
+  background-position: center left 2%;
+  background-size: initial;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.profile_search input {
+  position: relative;
+  z-index: 40;
+  background: transparent;
+  padding: 13px 13px 13px 0px;
+  border: none;
+  color: #5a5a5a;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile_search input::placeholder {
+  position: relative;
+  z-index: 40;
+  color: #5a5a5a;
+  font-family: var(--lato);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.shareProfile {
+  padding: 5px 20px 20px 20px;
+  border-radius: 10px;
+  background: #090a0c;
+}
+
+.shareProfile p {
+  font-size: 15px;
+}
+
+.shareProfile button {
+  padding: unset;
+  background: unset;
+  white-space: nowrap;
+  color: #fff;
+  font-family: var(--lato);
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.75;
+  transition: 0.4s ease-in-out;
+}
+
+.shareProfile button:hover {
+  opacity: 1;
+  background: unset;
+}
+
+.followBtn {
+  position: relative;
+}
+
+.followBtn .shareProfile {
+  position: absolute;
+  top: 50px;
+  left: -156px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+}
+
+.followBtn:hover .shareProfile {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #2d2d2d;
+}
+
+.modalClose {
+  background: unset !important;
+}
+
+.msgModal {
+  padding: 0 30px 30px;
+}
+
+.msgModal h4 {
+  font-size: 20px;
+}
+
+.msgModal p {
+  color: #939393;
+  font-size: 12px;
+}
+
+.msgModal form label {
+  font-size: 15px;
+  display: block;
+}
+
+.msgModal form textarea {
+  border-radius: 10px;
+  background: #202020;
+  padding: 8px 13px;
+  font-size: 12px;
+  font-family: var(--bak);
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  width: 100%;
+  border-color: transparent;
+  margin-bottom: 16px;
+}
+
+.msgModal form textarea::placeholder {
+  color: #5b5b5b;
+  font-size: 12px;
+  font-family: var(--bak);
+  font-weight: 400;
+}
+
+.msgModal form .sendBtn {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background: #fff;
+  color: #202020;
+  font-size: 12px;
+  width: 158px;
+  white-space: nowrap;
+}
+
+.msgModal form .cancleBtn {
+  background: #202020;
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: #fff;
+  width: 158px;
+}
+
+.ownWall {
+  max-height: 138px !important;
+  width: 100%;
+  height: 100% !important;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.profile-tab-container {
+  width: fit-content;
+  height: 45px !important;
+  max-height: 45px !important;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.profile-tab-container button {
+  width: 86px;
+  height: 32px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+}
+
+.profile-tab-container .active-btn {
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.profile-description {
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150.5%; /* 18.06px */
+}
+
+.msg_success {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.msg_close_btn {
+  width: 158px;
+  height: 37px;
+  border-radius: 10px;
+  background: #fff;
+  color: #202020;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Profile Page End */
+
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 425px) {
+  .cover_photo {
+    height: 102px;
+    border-radius: 10px;
+  }
+  .profile_photo {
+    width: 59px !important;
+    height: 59px !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .profile_photo img {
+    width: 49px !important;
+    height: 49px !important;
+    border-radius: 125px;
+  }
+  .profile-container {
+    display: absolute;
+    bottom: -70px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .profile-container h3 {
+    font-size: 20px !important;
+    margin-bottom: 0px;
+  }
+  .profile-container span {
+    font-size: 12px !important;
+  }
+  .profile_name {
+    font-size: 20px;
+  }
+
+  .msgBtn {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px !important;
+  }
+  .msgBtn svg {
+    width: 15px;
+    height: 15px;
+  }
+  .ownWall {
+    height: 152px !important;
+    object-fit: cover;
+  }
+  .profileImages-padding {
+    margin-bottom: 20px;
+    padding: 0 8px;
+  }
+  .profile_images {
+    margin-top: 18px;
+  }
+  .profileDetail {
+    padding-left: 114px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .profile-container {
+    display: absolute;
+    bottom: -30px;
+    height: 300px;
+  }
+  .profile-container h3 {
+    font-size: 20px !important;
+    margin-top: 100px;
+  }
+  .profile-container span {
+    font-size: 12px !important;
+  }
+  .msgBtn {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px !important;
+  }
+  .msgBtn svg {
+    width: 25px;
+    height: 25px;
+  }
+  .profileImages-padding {
+    margin-bottom: 20px;
+    padding: 0 8px;
+  }
+  .profile_name {
+    font-size: 22px;
+  }
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) {
+  .msgBtn {
+    width: 36px !important;
+    height: 35px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px !important;
+  }
+  .msgBtn svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .profileImages-padding {
+    margin-bottom: 40px;
+    padding: 0 18px;
+  }
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  .profileImages-padding {
+    margin-bottom: 59px;
+    padding: 0 18px;
+  }
+}

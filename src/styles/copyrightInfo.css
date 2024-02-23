@@ -1,0 +1,111 @@
+.ci-container img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.ci-img-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.ci-content-container span {
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-right: 5px;
+}
+
+.ci-content-container {
+  max-width: 1396px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.ci-content-container p {
+  color: #e3e3e3;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.ci-content-container ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.ci-content-container li {
+  display: block;
+  margin-right: 10px;
+  color: #e3e3e3;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ci-content-container li::before {
+  content: "\2022";
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+/* Responsive Design for Small Screens (Mobile Devices) */
+@media only screen and (max-width: 425px) {
+  .ci-content-container span {
+    font-size: 12px;
+  }
+  .ci-content-container p {
+    text-align: left;
+    font-size: 12px !important;
+  }
+  .ci-content-container ul li {
+    text-align: left;
+    font-size: 12px !important;
+  }
+  .ci-content-container ul {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .ci-content-container span {
+    font-size: 14px;
+  }
+  .ci-content-container {
+    text-align: left;
+    font-size: 12px;
+  }
+  .ci-content-container ul {
+    text-align: left;
+  }
+}
+
+/* Responsive Design for Medium Screens (Tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Responsive Design for Large Screens (Desktops) */
+@media only screen and (min-width: 1024px) {
+}

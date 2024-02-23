@@ -1,0 +1,299 @@
+/* Featured Artists Start */
+
+.artist {
+  width: 100%;
+  padding: 29px 59px;
+  border-radius: 40px;
+  position: relative;
+  background: #131619;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 63px;
+}
+
+.artist .proImg,
+.artist .proImg img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.artist .proImg img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.profileInner a img {
+  opacity: 0.9;
+  transition: 0.4s ease-in-out;
+}
+
+.profileInner a img:hover {
+  opacity: 1;
+}
+
+.artist p,
+.viewProfile {
+  color: #fff;
+  font-family: var(--bak);
+  font-size: 15px;
+  font-weight: 400;
+  transition: 0.4s ease-in-out;
+}
+
+.viewProfile {
+  border-radius: 15px !important;
+  background: #000 !important;
+  padding: 8px 18px;
+  transition: 0.4s ease-in-out;
+}
+
+.viewProfile:hover {
+  opacity: 0.9;
+  background-color: #292e32 !important;
+}
+
+.artist-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 245px !important;
+  padding: 31px 10px;
+}
+
+.artist-view-profile {
+  width: 92px;
+  height: 31px;
+  border-radius: 15px;
+  background: #131313;
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-pro img {
+  width: 18.242px;
+}
+.artist-pro p {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Featured Artists End*/
+
+@media only screen and (max-width: 375px) {
+  .artist {
+    padding: 13px 10px;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 12px;
+  }
+  .artist-profile {
+    width: 45px;
+    height: 45px;
+  }
+  .artist-pro p {
+    font-size: 8px;
+  }
+  .artist-view-profile {
+    width: fit-content;
+    padding: 0 8px;
+  }
+  .artist-pro {
+    margin: 6px 0 8px 0;
+  }
+  .artist-card {
+    border-radius: 5px;
+    width: 100% !important;
+    max-width: 87px !important;
+    padding: 22px 5px 12px 5px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .artist {
+    width: 100%;
+    border-radius: 10px;
+    padding: 13px 14px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 9px;
+  }
+
+  .artist .proImg,
+  .artist .proImg img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+  .profileInner p {
+    font-size: 10px;
+  }
+  .profileInner img {
+    width: 10px;
+  }
+  .viewProfile {
+    font-size: 8px;
+  }
+
+  .viewProfile {
+    border-radius: 8px !important;
+    padding: 5px 5px;
+  }
+  .artist-card {
+    border-radius: 5px;
+    width: 100% !important;
+    max-width: 87px !important;
+    padding: 22px 5px 12px 5px;
+  }
+  .artist-profile {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+  }
+  .artist-view-profile {
+    width: 70px;
+    height: 25px;
+    border-radius: 15px;
+    font-size: 8px;
+  }
+  .artist-pro img {
+    width: 10px;
+  }
+  .artist-pro p {
+    color: #fff;
+    font-family: Bakbak One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .artist-pro {
+    margin: 6px 0 8px 0;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .artist {
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .artist {
+    border-radius: 10px;
+    padding: 13px 14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 9px;
+  }
+  .artist .proImg,
+  .artist .proImg img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+  .profileInner p {
+    font-size: 10px;
+  }
+  .profileInner img {
+    width: 10px;
+  }
+  .artist {
+    column-gap: 25px;
+  }
+  .artist-profile {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+  }
+
+  .viewProfile {
+    border-radius: 8px !important;
+    padding: 5px 5px;
+  }
+  .artist-card {
+    width: 100%;
+  }
+  .artist-pro {
+    margin: 22px 0 36px 0 !important;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .artist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 9px;
+  }
+  .artist .proImg,
+  .artist .proImg img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .artist-profile {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .profileInner p {
+    font-size: 10px;
+  }
+  .profileInner img {
+    width: 10px;
+  }
+  .viewProfile {
+    font-size: 8px;
+  }
+
+  .viewProfile {
+    border-radius: 8px !important;
+    padding: 5px 5px;
+  }
+  .artist-card {
+    width: 100%;
+  }
+  .artist-pro {
+    margin: 22px 0 36px 0 !important;
+  }
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .artist {
+    padding: 8px 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 12px;
+  }
+  .artist-profile {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  .artist-profile {
+    width: 129.351px !important;
+    height: 130px !important;
+    object-fit: cover;
+  }
+  .artist-pro {
+    margin: 22px 0 36px 0 !important;
+  }
+  .artist {
+    column-gap: 30px;
+  }
+}

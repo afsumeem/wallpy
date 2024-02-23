@@ -1,0 +1,232 @@
+/* Login Page & Register Page Start */
+
+.brightBg {
+  border-radius: 30px;
+  background: #d9d9d9;
+  font-family: var(--bak);
+  font-weight: 400;
+  max-width: 978px;
+  /* max-height: 804px; */
+  width: 100%;
+  height: 100%;
+}
+
+.auth_iInfoBtn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 23px !important;
+  right: 32px !important;
+  cursor: pointer;
+}
+
+.imgLogin {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  color: #f4f4f4;
+  padding: 71px 20px;
+  height: 746px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../../assets/registarBg.png");
+}
+
+.register-p-title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.imgLogin p {
+  font-size: 25px;
+}
+
+.imgLogin span {
+  font-size: 15px;
+}
+
+.addedWall {
+  width: 385px;
+  height: 136px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brightBg h1 {
+  color: #373737;
+  font-size: 30px;
+  margin-bottom: 35px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.authtab {
+  padding: 3px 4px !important;
+  margin-bottom: 13px;
+  width: 217px;
+  height: 37px;
+  border-radius: 12px;
+  background: #c9c9c9;
+  display: flex;
+}
+
+.tabInner {
+  width: 105px;
+  height: 31px;
+  border-radius: 10px;
+  color: #373737;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tabActive {
+  background: #fff;
+}
+/* tabInner:hover */
+.community a {
+  color: #373737;
+  font-family: var(--roboto) !important;
+  font-size: 12px;
+  font-weight: 500 !important;
+  transition: 0.4s ease-in-out;
+}
+
+.community a:hover {
+  color: #fdf516;
+}
+
+.brightBg form label {
+  color: #373737;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.brightBg form {
+  max-width: 326px;
+  width: 100%;
+}
+.brightBg form input {
+  border-radius: 10px;
+  background: #fff;
+  padding: 14px;
+  max-width: 326px;
+  width: 100%;
+}
+
+.brightBg form input::placeholder {
+  color: rgba(55, 55, 55, 0.3);
+  font-size: 12px;
+}
+
+.darkBtn {
+  padding: 9px 47px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 10px;
+  background: #000;
+}
+
+.brightBg form a {
+  transition: 0.4s ease;
+}
+
+.brightBg form a:hover {
+  text-decoration: underline;
+}
+
+.socialBtn {
+  max-width: 163px !important;
+  margin: auto;
+}
+
+.socialBtn button {
+  border-radius: 5px;
+  padding: 10px;
+  white-space: nowrap;
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backBtn {
+  padding: 9px 15px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-family: var(--lato);
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.backBtn:hover {
+  opacity: 0.9;
+}
+
+/* Login Page & Register Page End */
+
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 350px) {
+  .community a {
+    font-size: 8px;
+  }
+  .imgLogin {
+    height: 171px;
+    border-radius: 10px !important;
+  }
+  .brightBg {
+    border-radius: 10px !important;
+  }
+  .brightBg form label {
+    text-align: center !important;
+  }
+}
+@media only screen and (min-width: 351px) and (max-width: 425px) {
+  .imgLogin {
+    height: 171px;
+    border-radius: 10px !important;
+  }
+  .brightBg {
+    border-radius: 10px !important;
+  }
+  .brightBg form label {
+    text-align: center !important;
+  }
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .addedWall {
+    width: 285px;
+    height: 136px;
+  }
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}

@@ -1,0 +1,251 @@
+.upload-rules-container .title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.upload-rules-container .upload-rules-p {
+  max-width: 100%;
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.upload-rules-container .upload-content-p {
+  color: #fff;
+  font-family: Bakbak One !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 117px auto 0 auto;
+}
+
+/* upload-section */
+.upload-rules-container .upload-section {
+  max-width: 933px;
+  height: 100%;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4) !important;
+  margin-top: 21px;
+}
+
+.upload-rules-container .upload-section .title {
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 35px !important;
+}
+.upload-rules-container .upload-section p {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.upload-section-content {
+  max-width: 100%;
+  min-height: 585px;
+}
+
+.upload-section-content .cm-rules-title {
+  color: #ff2e00;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 53px;
+  text-align: center;
+}
+
+.upload-section-content .upload-checkbox {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 137px;
+}
+
+.upload-section-content .upload-btn-disabled {
+  color: #c4c4c4;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 129px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #5a5a5a;
+  cursor: pointer;
+}
+
+.upload-section-content .upload-btn-active {
+  color: #c4c4c4;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 129px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #2924ff;
+  cursor: pointer;
+}
+
+.upload-section-content .upload-btn-active-purple {
+  color: #c4c4c4;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 129px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #dd2e44;
+  cursor: pointer;
+}
+
+.drag-drop-file {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.select-files {
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+  width: 103px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.upload-section-content .img-title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.upload-section-content .img-upload-progress {
+  width: 290px;
+  height: 10px;
+  border-radius: 100px;
+  background: linear-gradient(268deg, #fdf516 17.83%, #97fd16 51.91%);
+  box-shadow: 0px 3px 12px 0px rgba(253, 245, 22, 0.15);
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.upload_rules_part_title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.upload-btn-ad {
+  margin-top: 45px;
+}
+
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 425px) {
+  .upload-section {
+    margin-top: 15px;
+  }
+  .UploadRulesUploadInput {
+    max-height: 197px;
+  }
+  .drag-drop-file {
+    display: none;
+  }
+  .images_lines {
+    max-width: 322px !important;
+    margin: 0 auto;
+  }
+  .upload-rules-container .upload-rules-p {
+    max-width: 276px;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  .upload_rules_img1 {
+    max-height: 238px;
+  }
+  .upload_rules_part_title {
+    color: #fff;
+    font-family: Bakbak One;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+  .upload-content-p {
+    font-size: 12px;
+    text-align: center;
+    max-width: 293px;
+    margin: 15px auto 0 auto !important;
+  }
+  .upload-section-content .cm-rules-title {
+    font-size: 12px;
+    margin-top: 13px;
+  }
+  .upload-section-content .upload-checkbox {
+    margin-top: 46px;
+  }
+  .upload-rules-container .upload-section .title {
+    margin-bottom: 22px;
+  }
+}
+@media only screen and(min-width: 426px) and (max-width: 767px) {
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}

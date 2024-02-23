@@ -1,0 +1,208 @@
+.official-brands-container h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.official-brand-input {
+  max-width: 771px;
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 50px;
+  margin: 0 auto;
+}
+
+.official-brand-search-icon {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+.official-brand-header {
+  margin-bottom: 39px;
+  gap: 26px;
+}
+
+.official-brands-container .official-brand-header button {
+  width: 100px;
+  height: 42px;
+  border-radius: 23.5px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.filter-brands {
+  max-width: 1114px;
+  height: 42px;
+  border-radius: 23.5px;
+  background: rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+.official-brands-container .official-brand-header .filter-brands {
+  width: 100%;
+  height: 42px;
+  border-radius: 23.5px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.filter-brands .character {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.official_brands_first_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 14px;
+  row-gap: 29px;
+}
+
+.official_brands_second_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 15px;
+  row-gap: 29px;
+  margin-top: 29px;
+}
+
+.ob_first_image {
+  width: 100%;
+  height: 205px;
+  border-radius: 10px;
+}
+
+.ob_image {
+  width: 100%;
+  height: 257px;
+  border-radius: 30px !important;
+}
+
+.ob_card_title {
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 11px;
+}
+
+.ob_search {
+  margin-top: 18px;
+  margin-bottom: 41px;
+}
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 425px) {
+  .official-brands-container h1 {
+    font-size: 10px;
+  }
+  .official-brand-input {
+    font-size: 12px;
+  }
+
+  .official_brands_second_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 7px;
+    row-gap: 13px;
+    margin-top: 13px;
+  }
+  .ob_image {
+    width: 100% !important;
+    height: 72px !important;
+    border-radius: 10px !important;
+  }
+  .ob_card_title {
+    color: #fff;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 3px;
+  }
+  .ob_search {
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .official-brands-container h1 {
+    font-size: 10px;
+  }
+  .official-brand-input {
+    font-size: 12px;
+  }
+  .official_brands_second_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 7px;
+    row-gap: 13px;
+    margin-top: 13px;
+  }
+  .ob_image {
+    width: 100% !important;
+    height: 100px !important;
+    border-radius: 10px !important;
+  }
+  .official-brand-header {
+    display: none;
+  }
+}
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .official_brands_second_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 7px;
+    row-gap: 13px;
+    margin-top: 13px;
+  }
+  .ob_image {
+    width: 100%;
+    height: 120px !important;
+    border-radius: 10px !important;
+  }
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}
+
+/* for container */
+@media only screen and (min-width: 1024px) and (max-width: 1470px) {
+  .filter-brands .character {
+    color: #fff;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,112 @@
+/* Footer Start */
+footer {
+  font-family: var(--bak);
+  font-weight: 400;
+  color: #fff;
+  margin-top: 145px;
+}
+
+footer p {
+  font-size: 40px;
+}
+
+footer ul li {
+  font-size: 20px;
+}
+
+footer ul li a {
+  color: #939393;
+  font-size: 15px;
+  transition: 0.4s ease-in-out;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  color: #5a5a5a;
+  margin-top: 125px;
+}
+
+.footerBottom {
+  padding: 35px 0;
+}
+
+.footerBottom span,
+.footerBottom span a,
+.themeChangeBtn {
+  color: #d9d9d9;
+  font-family: var(--roboto) !important;
+  font-size: 15px;
+  font-weight: 500 !important;
+}
+
+.themeChangeBtn {
+  padding: 8px;
+  background-color: #292e32;
+  border-radius: 8px;
+}
+
+.footer_hr {
+  margin-top: 96px;
+}
+
+/* Footer End */
+
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 425px) {
+  .footerBottom span,
+  .footerBottom span a,
+  .themeChangeBtn {
+    font-size: 10px;
+  }
+  .footer-title {
+    color: #fff;
+    font-family: Bakbak One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .footer-links a {
+    font-size: 12px;
+  }
+  .footer_hr {
+    margin-top: 18px;
+  }
+}
+@media only screen and (max-width: 426px) and (max-width: 767px) {
+  .footerBottom span,
+  .footerBottom span a,
+  .themeChangeBtn {
+    font-size: 10px;
+  }
+  .footer-title {
+    color: #fff;
+    font-family: Bakbak One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .footer-links a {
+    font-size: 12px;
+  }
+
+  .footer_hr {
+    margin-top: 18px;
+  }
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer_hr {
+    margin-top: 36px;
+  }
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}

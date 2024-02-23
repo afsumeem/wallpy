@@ -1,0 +1,387 @@
+.acs-tab-container {
+  max-width: fit-content;
+  width: 100%;
+  height: 45px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+.acs-tab-container button {
+  max-width: fit-content;
+  width: 100%;
+  padding: 0 10px;
+  height: 33px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.acs-tab-container .acs-active-btn {
+  border-radius: 100px;
+  background: #dd2e44;
+}
+
+.acs-content-area {
+  width: 100%;
+  min-height: 780px;
+  border-radius: 10px;
+  background: #00000060;
+  margin-top: 20px;
+}
+
+.acs-content-area .profile-p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.acs-verify-request-btn {
+  width: 147px;
+  height: 38px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* profile tab styles */
+.brand-branner {
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.brand-name {
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.profile-avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.profile-avatar-section img {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+}
+
+.profile-avatar-section h1 {
+  color: #2555ff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.profile-banner-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.profile-banner-section img {
+  width: 232px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.profile-banner-section h1 {
+  color: #2555ff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile-tab-input-section {
+  width: 100%;
+}
+
+.profile-tab-input-section h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.profile-tab-input-section input {
+  max-width: 218px;
+  min-height: 34px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 8px;
+  margin: 5px;
+  border: none;
+}
+
+.profile-tab-input-section textarea {
+  max-width: 264px;
+  width: 100%;
+  min-height: 76px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px;
+  border: none;
+  resize: none;
+}
+
+.profile-tab-socials-section h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.profile-type-link {
+  width: 264px;
+  height: 35px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 8px;
+}
+
+.profile-save-btn {
+  width: 129px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #2924ff;
+  color: #c4c4c4;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile-delete-btn {
+  width: 129px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #f00;
+  color: #c4c4c4;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.credentials-tab-input-section h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.credentials-tab-input-section input {
+  width: 218px;
+  height: 34px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #939393;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 8px;
+}
+
+/* credentials tab styles */
+.credentials-tab-textarea-section h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.credentials-tab-textarea-section textarea {
+  max-width: 413px;
+  width: 100%;
+  min-height: 106px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  resize: none;
+  border: none;
+  padding: 8px;
+}
+
+.acs-privacy-tab-container {
+  width: 189px;
+  height: 45px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.acs-privacy-tab-container button {
+  color: #fff !important;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.acs-privacy-tab-container .acs-privacy-active-btn {
+  width: 74px;
+  height: 33px;
+  border-radius: 100px;
+  background: #dd2e44;
+}
+
+.acs-privacy-tab-container .acs-privacy-dactive-btn {
+  width: 74px;
+  height: 33px;
+  border-radius: 100px;
+}
+
+.acs-btn-bg-visible {
+  background-color: #0ab745 !important;
+}
+.acs-btn-bg-hide {
+  background-color: #ff003d !important;
+}
+
+.delete-account-title {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.blacklist-tag-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.blacklist-tag-section h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.blacklist-tag-section div {
+  max-width: 145px;
+  width: 100%;
+  height: 28px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.blacklist-tag-section input {
+  color: #939393;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.wallpaper-tab-textarea {
+  max-width: 413px;
+  width: 100%;
+  min-height: 106px;
+  max-height: 230px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #939393;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  resize: none;
+  border: none;
+}
+
+.wallpaper-tab-textarea h1 {
+  color: #939393;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tag-error-msg {
+  color: #fe112f;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

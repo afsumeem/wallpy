@@ -1,0 +1,420 @@
+/* Header Start */
+header,
+nav {
+  position: relative;
+  z-index: 99999;
+}
+
+header,
+.nav-link {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navbar {
+  padding-top: 40px;
+  padding-bottom: 34px;
+}
+
+.brand {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.navbar-nav {
+  gap: 24px;
+}
+
+.nav-link:hover {
+  color: #fdf516 !important;
+}
+
+.nav-link:active {
+  color: #fdf516 !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler span i {
+  color: #fff;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.searchNav {
+  position: relative;
+  z-index: 999999;
+  width: 100%;
+  max-width: 771px !important;
+  height: 45px;
+  background-image: url("../assets/Search.png");
+  background-repeat: no-repeat;
+  background-position: center left 2%;
+  background-size: initial;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.searchNav input {
+  position: relative;
+  z-index: 999999;
+  background: transparent;
+  padding: 13px 13px 13px 0px;
+  border: none;
+  color: #5a5a5a;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.searchNav input::placeholder {
+  position: relative;
+  z-index: 999999;
+  color: #5a5a5a;
+  font-family: var(--lato);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.profileMenu {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  padding: 6px 6px 6px 31px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.profileImg,
+.profileImg img {
+  position: relative;
+  z-index: 999999;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.profileMenu .favourite span svg path,
+.profileMenu .lock span svg path,
+.profileMenu .accSetting span svg path {
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.profileMenu .lock:hover span svg path,
+.profileMenu .accSetting:hover span svg path {
+  fill: #fdf516;
+}
+
+.profileMenu .favourite:hover span svg path {
+  fill: #dd2e44;
+}
+
+.profileMenu button {
+  opacity: 0.75;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.profileMenu button:hover {
+  opacity: 1;
+}
+
+.navBg {
+  width: 183px;
+  height: 45px;
+  padding: 0 18px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.accountParent {
+  position: relative;
+}
+
+.accountParent .accountChild {
+  transition: 0.3s ease-in-out;
+}
+
+.accountChild {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(25px);
+  position: absolute;
+  top: 55px;
+  left: -40%;
+  width: max-content;
+  visibility: hidden;
+  z-index: 9;
+}
+
+.navBorder {
+  border-bottom: 1px solid #292d31;
+  margin: 22px 20px 10px 20px;
+}
+
+.login-text p {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.childInner {
+  padding: 10px 30px;
+}
+
+.childInner a {
+  color: #fff;
+  transition: 0.4s ease-in-out;
+}
+
+.childInner a:hover {
+  color: #fdf516;
+}
+
+.childInner a:hover span svg path {
+  fill: #fdf516;
+}
+
+.accountParent:hover .accountChild {
+  visibility: visible;
+}
+
+.logoutBtn {
+  display: block;
+  background: none;
+  margin-bottom: 10px;
+  color: #939393;
+  font-size: 12px;
+  transition: 0.4s ease-in-out;
+}
+
+.logoutBtn:hover {
+  color: #f4f4f4;
+}
+
+.pt_85 {
+  padding-top: 30px;
+}
+.mt_85 {
+  padding-top: 85px;
+}
+
+/* own css */
+.border_right {
+  border-right: 1px solid #292d31;
+}
+.bgShadowTop {
+  background-image: url("../../assets/Vector.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgShadowMiddle {
+  background-image: url("../../assets/middle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgShadowbottom {
+  background-image: url("../../assets/bottom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.logout-btn {
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 20px auto;
+}
+.logout-btn:hover {
+  color: green;
+}
+
+.header_middle_text {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block !important;
+}
+
+.rules_input {
+  color: #5a5a5a !important;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header_profile_container {
+  width: 62px;
+  height: 62px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header_profile_container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+@media only screen and (max-width: 425px) {
+  .brand {
+    color: #fff;
+    font-family: Bakbak One;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .navbar-search-input {
+    display: none !important;
+  }
+  .navbar-search-btn {
+    display: block;
+  }
+  .header_middle_text {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 426px) {
+  .navbar-search-input {
+    display: inline-block;
+  }
+  .navbar-search-btn {
+    display: none;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .navbar-search-input {
+    display: inline-block;
+  }
+  .navbar-search-btn {
+    display: none;
+  }
+  .header_middle_text {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .w_also_like_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+  }
+  .header_middle_text {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1470px) {
+  .brand {
+    color: #fff;
+    font-family: Bakbak One;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .searchNav {
+    position: relative;
+    z-index: 50;
+    width: 100%;
+    max-width: 771px !important;
+    height: 35px;
+    background-image: url("../assets/Search.png");
+    background-repeat: no-repeat;
+    background-position: center left 2%;
+    background-size: initial;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .searchNav input {
+    font-size: 12px !important;
+  }
+  .nav-link {
+    color: #fff;
+    font-family: Bakbak One;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .navBg {
+    padding: 8px 15px 3px 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .navBg ul li {
+    list-style: none;
+  }
+  .navbar-search-input button {
+    padding: 0 10px !important;
+  }
+  .header_middle_text {
+    display: block !important;
+  }
+}
