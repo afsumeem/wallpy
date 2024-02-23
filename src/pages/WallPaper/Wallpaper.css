@@ -444,7 +444,7 @@ input[type="number"] {
 }
 
 .wallPaper_search_container {
-  width: 348px;
+  /* width: 348px; */
   height: 37px;
 }
 .wallPaper_search {
