@@ -95,7 +95,7 @@ const Header = () => {
           {show && (
             <>
               <input
-                className="w-100 SmallInput"
+                className=" SmallInput"
                 type="search"
                 placeholder="Find your next wallpaper..."
               />
@@ -176,9 +176,10 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="header_profile_container d-none d-md-inline-flex">
+        <div className="header_profile_container d-none d-md-block">
           <img className="logo-img" src={profile} alt="" />
         </div>
+
         {bars && (
           <button
             onClick={() => setOpen(!open)}

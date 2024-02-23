@@ -342,6 +342,10 @@ header,
   margin-top: 50px;
 }
 
+.SmallInput {
+  width: 100% !important;
+}
+
 @media only screen and (max-width: 425px) {
   .brand {
     color: #fff;

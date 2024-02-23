@@ -78,6 +78,7 @@ const Trending = () => {
                 <img
                   key={index}
                   className="img-fluid w-100"
+                  style={{ height: "115px", width: "152px" }}
                   src={image}
                   alt="image"
                 />

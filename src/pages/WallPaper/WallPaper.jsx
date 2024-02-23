@@ -234,7 +234,7 @@ const WallPaper = () => {
         style={{ backgroundColor: "#121212", zIndex: 99999999 }}
       >
         <Offcanvas.Body
-          className="h-100 w-75 position-relative"
+          className="h-100 w-100 position-relative"
           style={{ backgroundColor: "#121212" }}
         >
           <div className="d-flex justify-content-end align-items-center">
