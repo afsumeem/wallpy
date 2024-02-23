@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 
 import logout from "../../assets/logout.png";
@@ -13,6 +13,7 @@ import { Offcanvas } from "react-bootstrap";
 import {
   iLogout,
   iSearch,
+  iClose,
   iSocial1,
   iSocial2,
   iSocial3,
@@ -29,6 +30,11 @@ const items = [
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [show, setshow] = useState(false);
+  const [bars, setBars] = useState(true);
+  const [logo, setLogo] = useState(false);
+
+  const [searchBtn, setSearchBtn] = useState(true);
   const [loggedIn, setLoggedIn] = useState(
     JSON.parse(localStorage.getItem("loggedIn"))
   );
@@ -38,44 +44,66 @@ const Header = () => {
     setLoggedIn(false);
     setOpen(!open);
   };
-
-  //
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-
-  const toggleSearch = () => {
-    setIsSearchOpen(!isSearchOpen);
+  const handlenavbar_search_btn = () => {
+    setshow(true);
+    setSearchBtn(false);
+    setBars(false);
+    setLogo(true);
+  };
+  const handleCloseIcon = () => {
+    setshow(false);
+    setSearchBtn(true);
+    setBars(true);
+    setLogo(false);
   };
 
   return (
     <div className="container position-relative w-100">
       <div className="d-flex justify-content-between align-items-center my-3 w-100">
         <div className="d-flex align-items-center flex-grow gap-2 gap-sm-4 w-75">
-          <Link className="brand" to="/">
+          <Link className={logo ? "d-sm-block d-none brand" : "brand"} to="/">
             WPS
           </Link>
-          <button className="px-3 text-white navbar-search-btn mb-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
+          {searchBtn && (
+            <button
+              className="px-3 text-white navbar-search-btn mb-2"
+              onClick={handlenavbar_search_btn}
             >
-              <circle
-                cx="9.16667"
-                cy="9.16668"
-                r="5.83333"
-                stroke="white"
-                stroke-width="2"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <circle
+                  cx="9.16667"
+                  cy="9.16668"
+                  r="5.83333"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <path
+                  d="M16.6667 16.6667L14.1667 14.1667"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          )}
+          {show && (
+            <>
+              <input
+                className="w-100 SmallInput"
+                type="search"
+                placeholder="Find your next wallpaper..."
               />
-              <path
-                d="M16.6667 16.6667L14.1667 14.1667"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-          </button>
+              <button className="closeBtn px-3" onClick={handleCloseIcon}>
+                {iClose}
+              </button>
+            </>
+          )}
           <div className="searchNav navbar-search-input d-flex align-items-center flex-grow w-100">
             <button className="px-3">{iSearch}</button>
             <input
@@ -151,16 +179,17 @@ const Header = () => {
         <div className="header_profile_container d-none d-md-inline-flex">
           <img className="logo-img" src={profile} alt="" />
         </div>
-
-        <button
-          onClick={() => setOpen(!open)}
-          className="navbar-toggler d-md-none"
-          type="button"
-        >
-          <span>
-            <i className="fa fa-bars"></i>
-          </span>
-        </button>
+        {bars && (
+          <button
+            onClick={() => setOpen(!open)}
+            className="navbar-toggler d-md-none"
+            type="button"
+          >
+            <span>
+              <i className="fa fa-bars"></i>
+            </span>
+          </button>
+        )}
       </div>
       <Offcanvas
         show={open}
@@ -213,27 +242,30 @@ const Header = () => {
           </div>
           <div>
             {loggedIn && (
-              <div
-                className={`row mt-4`}
-                style={{ borderBottom: "1px solid #292d31" }}
-              >
+              <>
                 <div
-                  onClick={() => setOpen(!open)}
-                  className="col-6 px-3 childInner d-flex flex-column gap-3 text-nowrap border_right"
+                  className={`row mt-4`}
+                  style={{ borderBottom: "1px solid #292d31" }}
                 >
-                  <Link to="profile">Profile</Link>
-                  <Link to="#">Favorites</Link>
-                  <Link to="#">Collections</Link>
+                  <div
+                    onClick={() => setOpen(!open)}
+                    className="col-6 px-3 childInner d-flex flex-column gap-3 text-nowrap border_right"
+                  >
+                    <Link to="profile">Profile</Link>
+                    <Link to="#">Favorites</Link>
+                    <Link to="#">Collections</Link>
+                  </div>
+                  <div
+                    onClick={() => setOpen(!open)}
+                    className="col-6 childInner d-flex flex-column gap-3 text-nowrap text-start"
+                  >
+                    <Link to="#">Messages</Link>
+                    <Link to="#">The Vault</Link>
+                    <Link to="setting">Settings</Link>
+                  </div>
                 </div>
-                <div
-                  onClick={() => setOpen(!open)}
-                  className="col-6 childInner d-flex flex-column gap-3 text-nowrap text-start"
-                >
-                  <Link to="#">Messages</Link>
-                  <Link to="#">The Vault</Link>
-                  <Link to="setting">Settings</Link>
-                </div>
-              </div>
+                <button className="uploadButton">Upload</button>
+              </>
             )}
             {!loggedIn && (
               <div className="">
