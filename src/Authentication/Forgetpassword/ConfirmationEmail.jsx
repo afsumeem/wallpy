@@ -33,9 +33,9 @@ const ConfirmationEmail = () => {
                         color: "#373737",
                       }}
                     >
-                      Please check your email for further instructions on
-                      resetting your password. If you don't see an email from
-                      us, please check your spam folder.
+                      Welcome! We've sent a confirmation link to your email.
+                      Please check your inbox and click the link to complete
+                      your registration. Thank you for joining the society!
                     </p>
                     <div className="text-center mt-5">
                       <Link

@@ -27,9 +27,12 @@ const Register = () => {
     const user = { ...formData };
     setUsers([...users, user]);
     setFormData(initialFormData);
-    // Swal.fire("Registered successfully");
-    navigate("/confirmationEmail");
   };
+  useEffect(() => {
+    if (users.length > 0) {
+      navigate("/confirmationEmail");
+    }
+  }, [users, navigate]);
   useEffect(() => {
     const savedUsers = JSON.parse(localStorage.getItem("users"));
     if (savedUsers) {

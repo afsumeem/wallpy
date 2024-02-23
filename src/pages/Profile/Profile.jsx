@@ -112,11 +112,15 @@ const Profile = () => {
       <div className="container wallPaper_mt">
         <div className="search_Container">
           <div className="coverImg">
-            <img
-              className="cover_photo w-100 img-fluid ps-md-4 ps-lg-5"
-              src={cover_photo}
-              alt="Cover image"
-            />
+            <div className="cover_photo">
+              <img
+                className=" "
+                style={{ height: "200px", transform: "scale(1)" }}
+                src={cover_photo}
+                alt="Cover image"
+              />
+            </div>
+
             <button className="sm_none">
               <img src={edit_cover} alt="Edit" />
             </button>
@@ -199,7 +203,7 @@ const Profile = () => {
                     </div>
                   </div>
                 </div> */}
-                <div className="d-none d-md-block">
+                <div className="">
                   <button
                     className="msgBtn"
                     data-bs-toggle="modal"
@@ -357,25 +361,33 @@ const Profile = () => {
                   </span>
                 </button>
               </div>
-              <div className="share">
-                <div className="d-flex justify-content-end align-items-center gap-3">
-                  <Link to="/" className="overflow-hidden">
-                    <img src={twitter} alt="Twitter" />
-                  </Link>
-                  <Link to="/">
-                    <img src={behance} alt="Behance" />
-                  </Link>
-                  <Link to="/">
-                    <img src={dribble} alt="Dribble" />
-                  </Link>
-                  <Link to="/">
-                    <img src={instagram} alt="Instragram" />
-                  </Link>
-                </div>
+              {/*  */}
+            </div>
+          </div>
+          <div className="d-flex w-100 justify-content-between align-items-end">
+            <div className="ms-2">
+              <span className="profile_bio ">
+                WPS Admin <br /> Founder & Developer
+              </span>
+            </div>
+
+            <div className="share">
+              <div className="d-flex justify-content-end align-items-center gap-3">
+                <Link to="/" className="overflow-hidden">
+                  <img src={twitter} alt="Twitter" />
+                </Link>
+                <Link to="/">
+                  <img src={behance} alt="Behance" />
+                </Link>
+                <Link to="/">
+                  <img src={dribble} alt="Dribble" />
+                </Link>
+                <Link to="/">
+                  <img src={instagram} alt="Instragram" />
+                </Link>
               </div>
             </div>
           </div>
-
           <hr className="w-100" />
         </div>
 
