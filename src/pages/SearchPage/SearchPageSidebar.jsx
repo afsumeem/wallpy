@@ -26,6 +26,7 @@ const SearchPageSidebar = ({
   ...props
 }) => {
   const [selectedTab, setSelectedTab] = useState(1);
+
   return (
     <Offcanvas
       show={open}
@@ -154,14 +155,16 @@ const SearchPageSidebar = ({
                     <button>3840 × 2400</button>
                   </div>
                 </div>
-                <div className="mb-4">
+                <div className="mb-4 d-none d-md-block">
                   <p className="text-white mb-1">Auto Detection</p>
                   <p className="text-white">
                     Your screen resolution is 1920 × 1080.
                   </p>
                 </div>
-                <p className="text-white mb-2">Custom Resolution</p>
-                <form action="">
+                <p className="text-white mb-2 d-none d-md-block">
+                  Custom Resolution
+                </p>
+                <form action="" className="d-none d-md-block">
                   <div className="d-flex justify-content-center align-items-center gap-3 mb-3">
                     <input type="text" name="width" placeholder="Width" />
                     <input type="text" name="height" placeholder="Height" />

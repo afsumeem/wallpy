@@ -11,12 +11,16 @@ import { AuthContext } from "../../context/AuthContext";
 import { Link } from "react-router-dom";
 import HeaderDrawer from "../../components/common-ui/header/HeaderDrawer";
 import { iSearch } from "../../utils/icons/global_icons";
+import Footer from "../../Shared/Footer/Footer";
 
 const SearchPage = () => {
   const { open, setOpen } = useContext(AuthContext);
   const [openD, setOpenD] = useState(false);
   const [selectedTab, setSelectedTab] = useState(1);
   const [sfwTab, setSfwTab] = useState(0);
+  const [loggedIn, setLoggedIn] = useState(
+    JSON.parse(localStorage.getItem("loggedIn"))
+  );
   return (
     <div className="wallpaper_bg">
       <HeaderDrawer />
@@ -114,16 +118,41 @@ const SearchPage = () => {
                   fill="#FF0F00"
                 />
               </svg>
-
-              <p className="">
-                The NSFW (Not Safe For Work) feature is currently disabled. To
-                re-enable it, please navigate to your account settings and,
-                under the "Wallpapers" section, activate this setting.
-              </p>
-              <button>Settings</button>
+              <>
+                {loggedIn ? (
+                  <>
+                    <p className="">
+                      The NSFW (Not Safe For Work) feature is currently
+                      disabled. To re-enable it, please navigate to your account
+                      settings and, under the "Wallpapers" section, activate
+                      this setting.
+                    </p>
+                    <button>Settings</button>
+                  </>
+                ) : (
+                  <>
+                    <p className="">
+                      Please be advised that access to the NSFW category is
+                      restricted to registered users only. If you wish to
+                      explore this category, please make sure you are logged in
+                      to your account.
+                      <br />
+                      Alternatively, you can explore the SFW (Safe for Work)
+                      section by adjusting the filter settings.
+                    </p>
+                    <button className="mt-4">
+                      <Link to="/login" className="text-white">
+                        Login
+                      </Link>
+                    </button>
+                  </>
+                )}
+              </>
             </div>
           )}
         </section>
+
+        <Footer />
 
         <SearchPageSidebar
           sfwTab={sfwTab}

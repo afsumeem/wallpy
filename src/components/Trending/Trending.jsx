@@ -85,7 +85,11 @@ const Trending = () => {
               </Link>
             ))}
           </div>
-          <button className="moreBtn">More Wallpapers</button>
+          <button className="moreBtn">
+            <Link to="/SearchPage" style={{ color: "rgba(255, 255, 255, 1)" }}>
+              More Wallpapers
+            </Link>
+          </button>
         </div>
       </div>
     </>

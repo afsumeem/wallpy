@@ -119,8 +119,4 @@ export const router = createBrowserRouter([
     path: "/wallpaper",
     element: <WallPaper />,
   },
-  {
-    path: "/ok",
-    element: <WallpaperSidebar />,
-  },
 ]);
