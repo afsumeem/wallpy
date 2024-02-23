@@ -99,7 +99,7 @@ const Header = () => {
                 type="search"
                 placeholder="Find your next wallpaper..."
               />
-              <button className="closeBtn px-3" onClick={handleCloseIcon}>
+              <button className="closeBtn" onClick={handleCloseIcon}>
                 {iClose}
               </button>
             </>
