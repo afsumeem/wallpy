@@ -45,7 +45,7 @@ const Register = () => {
           <h1 className="d-md-none register-p-title">THE WALLPAPER SOCIETY</h1>
           <div className="row brightBg px-1 py-3 px-md-3 py-md-4 mx-auto">
             <div className="col-md-6 position-relative">
-              <div className="auth_iInfoBtn">{iInfo}</div>
+              {/* <div className="auth_iInfoBtn">{iInfo}</div> */}
               <div className="imgLogin d-flex flex-column justify-content-between align-items-center">
                 <p className="d-none d-md-block">Welcome to the Society</p>
                 {/* <div className="text-center d-none d-md-block">
