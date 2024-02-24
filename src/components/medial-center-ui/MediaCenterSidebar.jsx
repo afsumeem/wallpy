@@ -48,7 +48,12 @@ const MediaCenterSidebar = ({ open }) => {
           <div>
             <div className="mc-sidebar-remove-container text-center mt-5">
               <h1>Create New Collection</h1>
-              <button className="mt-3">Create</button>
+              <button
+                className="mt-3"
+                style={{ color: "rgba(255, 255, 255, 1)" }}
+              >
+                Create
+              </button>
             </div>
             <div className="mc-sidebar-remove-container text-center mt-5">
               <h1>Rename Collection</h1>

@@ -17,13 +17,13 @@ const Footer = () => {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/">Account</Link>
+                  <Link to="/account-settings">Account</Link>
                 </li>
                 <li>
                   <Link to="/">Favorites</Link>
                 </li>
                 <li>
-                  <Link to="/">Messages</Link>
+                  <Link to="/messages">Messages</Link>
                 </li>
               </ul>
             </div>
@@ -32,16 +32,16 @@ const Footer = () => {
               <ul>
                 <li>The Society</li>
                 <li>
-                  <Link to="/">About</Link>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/">Contact</Link>
+                  <Link to="/contact">Contact</Link>
                 </li>
                 <li>
-                  <Link to="/">Copyright Information</Link>
+                  <Link to="/copyright-information">Copyright Information</Link>
                 </li>
                 <li>
-                  <Link to="/">Socials</Link>
+                  <Link to="/socials">Socials</Link>
                 </li>
                 <li>
                   <Link to="/">Sponsors / Advertisers</Link>
@@ -63,13 +63,13 @@ const Footer = () => {
             <span className="d-none d-md-block">© The Wallpapers Society</span>
             <span className="d-md-none">The WPS</span>
             <span>
-              <Link to="/">Community Rules</Link>
+              <Link to="/community-rules">Community Rules</Link>
             </span>
             <span>
-              <Link to="/">Privacy Policy</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </span>
             <span>
-              <Link to="/">Terms and Conditions</Link>
+              <Link to="/terms-and-conditions">Terms and Conditions</Link>
             </span>
           </div>
         </div>

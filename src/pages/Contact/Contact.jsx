@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
 import { iInfo } from "../../utils/icons/global_icons";
+import Button from "react-bootstrap/Button";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
 
 import icon1 from "../../assets/icons/contact/icon1.png";
 import icon2 from "../../assets/icons/contact/icon2.png";
@@ -48,6 +51,7 @@ const Contact = () => {
                 <img width="17" height="17" src={icon5} alt="" />
                 <img width="17" height="17" src={icon6} alt="" />
               </div>
+
               <div>{iInfo}</div>
             </div>
           </div>

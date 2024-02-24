@@ -78,7 +78,7 @@
 }
 
 .contact-second-step h6 {
-  color: #373737;
+  color: rgba(55, 55, 55, 1) !important;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
@@ -93,11 +93,11 @@
   height: 37px;
   flex-shrink: 0;
   margin: 0 auto;
-  color: #373737;
+  color: rgba(55, 55, 55, 1) !important;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700 !important;
   line-height: normal;
   margin-bottom: 42px;
 }
@@ -132,7 +132,7 @@
   display: none;
 }
 .hello_there {
-  color: #373737 !important;
+  color: rgba(55, 55, 55, 1) !important;
   font-family: Lato !important;
   font-size: 40px;
   font-style: normal !important;

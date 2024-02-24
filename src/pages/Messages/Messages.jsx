@@ -3,6 +3,7 @@ import "../../styles/messages.css";
 import SidebarChats from "../../components/message-ui/SidebarChats";
 import MessageConversationArea from "../../components/message-ui/MessageConversationArea";
 import { leftArrow } from "../../utils/icons/global_icons";
+import dot from "../../assets/dot.svg";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
 
@@ -14,7 +15,7 @@ const Messages = () => {
       <Header />
       <div className="container message-container">
         <h1 className="title">Messages</h1>
-        <hr style={{ border: "1px solid #5A5A5A" }} />
+        <hr style={{ border: "1px solid #CBCBCB" }} />
         <div className="mb-4 mx-auto mx-md-0" style={{ width: "295px" }}>
           <div className="message-tab-container d-flex justify-content-around align-items-center mx-auto">
             {["Inbox", "Sent"]?.map((t, i) => (
@@ -32,7 +33,20 @@ const Messages = () => {
             ))}
           </div>
         </div>
-        <div className="msg-left-arrow d-lg-none">{leftArrow}</div>
+
+        {open ? (
+          <div
+            className="msg-left-arrow d-lg-none"
+            onClick={() => setOpen(false)}
+          >
+            {leftArrow}
+          </div>
+        ) : (
+          <div className="msg-left-arrow d-lg-none">
+            <img src={dot} alt="" />
+          </div>
+        )}
+
         <section
           className="d-flex justify-content-between h-100"
           style={{ maxHeight: "620px", columnGap: "54px" }}
