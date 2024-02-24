@@ -33,12 +33,14 @@ import { Link } from "react-router-dom";
 import WallpaperSidebar from "../../components/wallpapers-ui/WallpaperSidebar";
 import img from "../../assets/icons/mixer.png";
 import Drawer from "../../components/common-ui/drawers/Drawer";
+import { FaArrowLeft } from "react-icons/fa6";
 import {
   add_box,
   iDownload,
   iMagnifierG,
   iSearch,
   iShare,
+  leftArrow,
 } from "../../utils/icons/global_icons";
 import { Offcanvas } from "react-bootstrap";
 import download from "../../assets/icons/download.svg";
@@ -250,25 +252,13 @@ const WallPaper = () => {
               className=""
               style={{ width: "40px", height: "40px" }}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="27"
-                height="27"
-                viewBox="0 0 27 27"
-                fill="none"
+              <div
+                className="msg-left-arrow d-lg-none leftArr d-flex align-items-center justify-content-center"
+                onClick={() => setOpen(false)}
               >
-                <g clip-path="url(#clip0_127_330)">
-                  <path
-                    d="M11.3513 17.5387L12.9375 19.125L18.5625 13.5L12.9375 7.875L11.3513 9.46125L14.2537 12.375H3.375V14.625H14.2537L11.3513 17.5387ZM21.375 3.375H5.625C4.37625 3.375 3.375 4.3875 3.375 5.625V10.125H5.625V5.625H21.375V21.375H5.625V16.875H3.375V21.375C3.375 22.6125 4.37625 23.625 5.625 23.625H21.375C22.6125 23.625 23.625 22.6125 23.625 21.375V5.625C23.625 4.3875 22.6125 3.375 21.375 3.375Z"
-                    fill="#D9D9D9"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_127_330">
-                    <rect width="27" height="27" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
+                {/* {leftArrow} */}
+                <FaArrowLeft className="fs-3" />
+              </div>
             </button>
           </div>
           <WallpaperSidebar />

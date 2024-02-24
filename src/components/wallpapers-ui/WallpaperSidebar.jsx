@@ -18,7 +18,7 @@ const WallpaperSidebar = ({ bgColorCode }) => {
       style={{
         minHeight: "802px",
         maxHeight: "830px",
-        background: bgColorCode || "rgba(0, 0, 0, 0.20)",
+        background: "#121212",
       }}
     >
       <p className="text-center mb-3">Posted by</p>

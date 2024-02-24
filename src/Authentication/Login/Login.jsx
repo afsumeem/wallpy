@@ -95,7 +95,7 @@ const Login = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
-                  <p>{errorMessage}</p>
+                  <p className="errorMessage ">{errorMessage}</p>
                   <div className="text-center mt-4">
                     <button type="submit" className="darkBtn mb-2">
                       {/* <Link className="text-white" to="/login"> */}

@@ -467,6 +467,11 @@ input[type="number"] {
 .wallPaper_mt {
   margin-top: 45px !important;
 }
+.leftArr {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 40px !important;
+  height: 40px !important;
+}
 
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
 @media only screen and (max-width: 425px) {
