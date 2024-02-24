@@ -38,6 +38,11 @@
   line-height: normal;
 }
 
+/*  */
+.selected {
+  border: 1px solid rgba(179, 253, 22, 1);
+}
+
 .choose-type-btn-container {
   width: 235px;
   height: 36px;
@@ -189,7 +194,7 @@
     row-gap: 9px;
   }
   .upload_images_container .upload_img {
-    max-width: 115px;
+    max-width: 135px;
     width: 100%;
     min-height: 152px;
     border-radius: 10px;

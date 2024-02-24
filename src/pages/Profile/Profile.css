@@ -157,6 +157,12 @@
   border-radius: 10px;
   background: #090a0c;
 }
+.shareProfileContainer {
+  position: absolute;
+  right: 0;
+  top: 33px;
+  z-index: 9999;
+}
 
 .shareProfile p {
   font-size: 15px;

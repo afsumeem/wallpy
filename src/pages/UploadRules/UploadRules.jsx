@@ -65,7 +65,7 @@ const UploadRules = () => {
           <div className="position-relative wallPaper_search_container">
             <div
               style={{ top: "5px", left: "10px" }}
-              className="position-absolute"
+              className="position-absolute d-none d-md-block"
             >
               {iMagnifierG}
             </div>

@@ -1,9 +1,14 @@
-import React, { useRef } from "react";
-import img1 from "../../assets/images/media-center/img1.png";
+import React, { useRef, useState } from "react";
+import img1 from "../../assets/staff.png";
 import { iUploadUp } from "../../utils/icons/global_icons";
 
 const UploadContentArea = ({ images, setImages }) => {
   const imageRef = useRef();
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (index) => {
+    setSelectedImage(index);
+  };
   return (
     <>
       {images?.length === 0 ? (
@@ -39,11 +44,25 @@ const UploadContentArea = ({ images, setImages }) => {
       ) : (
         <div className="w-100 d-flex flex-column justify-content-between gap-4">
           <section className="upload_images_container">
-            <img className="upload_img w-100" src={img1} alt="" />
-            <img className="upload_img w-100" src={img1} alt="" />
+            <img
+              className={`upload_img w-100 ${
+                selectedImage === 0 ? "selected" : ""
+              }`}
+              src={img1}
+              alt=""
+              onClick={() => handleImageClick(0)}
+            />
+            <img
+              className={`upload_img w-100 ${
+                selectedImage === 1 ? "selected" : ""
+              }`}
+              src={img1}
+              alt=""
+              onClick={() => handleImageClick(1)}
+            />
           </section>
 
-          <button className="view-more-btn mx-auto text-center">
+          <button className="view-more-btn mx-auto text-center d-none d-md-block">
             View more
           </button>
         </div>

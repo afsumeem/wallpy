@@ -9,10 +9,10 @@ import Footer from "../../Shared/Footer/Footer";
 
 const tabs = [
   { id: 1, name: "Profile" },
-  { id: 2, name: "Brand" },
-  { id: 3, name: "Credentials" },
-  { id: 4, name: "Privacy" },
-  { id: 5, name: "Wallpapers" },
+
+  { id: 2, name: "Credentials" },
+  { id: 3, name: "Privacy" },
+  { id: 4, name: "Wallpapers" },
 ];
 
 const AccountSettings = () => {
@@ -36,11 +36,11 @@ const AccountSettings = () => {
             </button>
           ))}
         </div>
-        <section className="acs-content-area p-2 p-md-4">
+        <section className="acs-content-area p-1 p-md-4 ">
           {selectedTab === 1 && <ACSProfileTab />}
-          {selectedTab === 3 && <ACSCredentialsTab />}
-          {selectedTab === 4 && <ACSPrivacyTab />}
-          {selectedTab === 5 && <ACSWallpapersTab />}
+          {selectedTab === 2 && <ACSCredentialsTab />}
+          {selectedTab === 3 && <ACSPrivacyTab />}
+          {selectedTab === 4 && <ACSWallpapersTab />}
         </section>
       </div>
       <Footer />

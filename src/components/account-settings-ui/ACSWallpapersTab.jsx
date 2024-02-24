@@ -25,12 +25,18 @@ const ACSWallpapersTab = () => {
 
       <div className="blacklist-tag-section mt-5">
         <h1>Blacklist Tags</h1>
-        <div className="px-2">
-          <input ref={tagRef} className="w-100 h-100" type="text" />
+        <div className="rounded-4 ">
+          <input ref={tagRef} className="w-100 h-100 px-3" type="text" />
           <div
             onClick={() => handleTag()}
-            className="position-absolute bottom-0 end-0 cursor-pointer"
-            style={{ width: "fit-content" }}
+            className=" cursor-pointer px-1 "
+            style={{
+              position: "absolute",
+              bottom: "0",
+              right: "0",
+              width: "fit-content",
+              backgroundColor: "transparent",
+            }}
           >
             {iAdd_circle}
           </div>

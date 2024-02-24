@@ -13,13 +13,15 @@ const BrandTab = ({ step, setStep }) => {
           Links to other verified profiles (optional)
         </h2>
         <input
-          className="account-verify-input w-100"
+          className="account-verify-input "
+          style={{ width: "309px" }}
           type="url"
           placeholder="URL"
         />
         <input
-          className="account-verify-input d-block w-100 mt-4"
+          className="account-verify-input d-block  mt-4"
           type="url"
+          style={{ width: "309px" }}
           placeholder="URL"
         />
       </div>

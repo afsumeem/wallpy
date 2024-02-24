@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 const MediaCenterSidebar = ({ open }) => {
-  const [profileTab, setProfileTab] = useState("");
+  const [profileTab, setProfileTab] = useState("Visible");
+
   return (
     <div className="d-flex flex-column justify-content-between p-3 h-100">
       {open === 0 && (
@@ -33,6 +34,10 @@ const MediaCenterSidebar = ({ open }) => {
                   </button>
                 ))}
               </div>
+              <hr />
+              <div className=" mb-5">
+                <button className="cm-sidebar-save-btn d-block">Save</button>
+              </div>
             </div>
           </div>
         </>
@@ -57,12 +62,12 @@ const MediaCenterSidebar = ({ open }) => {
                 {["Visible", "Hidden"]?.map((t, i) => (
                   <button
                     onClick={() => setProfileTab(t)}
-                    className={`${
+                    className={`text-white ${
                       profileTab === t
                         ? `mc-active-btn ${
                             profileTab === "Visible"
-                              ? "mc-btn-bg-visible"
-                              : "mc-btn-bg-hide"
+                              ? "mc-btn-bg-visible text-white"
+                              : "mc-btn-bg-hide text-white"
                           }`
                         : "mc-dactive-btn"
                     }`}
@@ -72,14 +77,17 @@ const MediaCenterSidebar = ({ open }) => {
                   </button>
                 ))}
               </div>
+              <hr />
+              <div className=" mb-5">
+                <button className="cm-sidebar-delete-btn d-block mb-4">
+                  Delete
+                </button>
+                <button className="cm-sidebar-save-btn d-block">Save</button>
+              </div>
             </div>
           </div>
         </>
       )}
-      <div className="">
-        <button className="cm-sidebar-delete-btn d-block mb-4">Delete</button>
-        <button className="cm-sidebar-save-btn d-block">Save</button>
-      </div>
     </div>
   );
 };

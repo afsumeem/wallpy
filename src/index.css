@@ -238,7 +238,7 @@ hr {
   width: 74px;
   height: 33px;
   border-radius: 100px;
-  background: #dd2e44;
+  background: rgba(221, 46, 68, 1);
 }
 
 .td-tab-container .td-tab-dactive-btn {
@@ -248,10 +248,10 @@ hr {
 }
 
 .td-tab-btn-bg-visible {
-  background-color: #0ab745 !important;
+  background-color: rgba(10, 183, 69, 1) !important;
 }
 .td-tab-btn-bg-hide {
-  background-color: #ff003d !important;
+  background-color: rgba(221, 46, 68, 1) !important;
 }
 
 .title_hr {

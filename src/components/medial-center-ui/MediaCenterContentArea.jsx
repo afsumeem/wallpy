@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import img1 from "../../assets/images/media-center/img1.png";
-import { iEye } from "../../utils/icons/global_icons";
+// import { iEye } from "../../utils/icons/global_icons";
 
 const MediaCenterContentArea = ({ open }) => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (index) => {
+    setSelectedImage(index);
+  };
   return (
     <div className="w-100 d-flex flex-column justify-content-between gap-4">
       {open === 0 && (
         <section className="row">
           <div className="col-4 col-lg-3 mc-card px-2 ps-md-2 mb-3">
             <img
-              className="w-100 h-100"
+              className={`upload_img w-100 h-100 ${
+                selectedImage === 0 ? "selected" : ""
+              }`}
+              onClick={() => handleImageClick(0)}
               src={img1}
               alt=""
               style={{ objectFit: "cover", borderRadius: "10px" }}
@@ -17,7 +25,10 @@ const MediaCenterContentArea = ({ open }) => {
           </div>
           <div className="col-4 col-lg-3 mc-card px-2 ps-md-2 mb-3">
             <img
-              className="w-100 h-100"
+              className={`upload_img w-100 h-100 ${
+                selectedImage === 1 ? "selected" : ""
+              }`}
+              onClick={() => handleImageClick(1)}
               src={img1}
               alt=""
               style={{ objectFit: "cover", borderRadius: "10px" }}
@@ -25,7 +36,10 @@ const MediaCenterContentArea = ({ open }) => {
           </div>
           <div className="col-4 col-lg-3 mc-card px-2 ps-md-2 mb-3">
             <img
-              className="w-100 h-100"
+              className={`upload_img w-100 h-100 ${
+                selectedImage === 2 ? "selected" : ""
+              }`}
+              onClick={() => handleImageClick(2)}
               src={img1}
               alt=""
               style={{ objectFit: "cover", borderRadius: "10px" }}
@@ -51,12 +65,12 @@ const MediaCenterContentArea = ({ open }) => {
                   <img className="w-100 h-100" src={img1} alt="" />
                 </div>
               </div>
-              <button
+              {/* <button
                 className="position-absolute"
                 style={{ bottom: "5px", right: "0", zIndex: 50 }}
               >
                 {iEye}
-              </button>
+              </button> */}
             </div>
             <button className="collection-card-btn mx-auto">
               Call of Duty
@@ -78,12 +92,12 @@ const MediaCenterContentArea = ({ open }) => {
                   <img className="w-100 h-100" src={img1} alt="" />
                 </div>
               </div>
-              <button
+              {/* <button
                 className="position-absolute"
                 style={{ bottom: "5px", right: "0", zIndex: 50 }}
               >
                 {iEye}
-              </button>
+              </button> */}
             </div>
             <button className="collection-card-btn mx-auto">
               Call of Duty
@@ -105,12 +119,12 @@ const MediaCenterContentArea = ({ open }) => {
                   <img className="w-100 h-100" src={img1} alt="" />
                 </div>
               </div>
-              <button
+              {/* <button
                 className="position-absolute"
                 style={{ bottom: "5px", right: "0", zIndex: 50 }}
               >
                 {iEye}
-              </button>
+              </button> */}
             </div>
             <button className="collection-card-btn mx-auto">
               Call of Duty
@@ -119,7 +133,7 @@ const MediaCenterContentArea = ({ open }) => {
         </section>
       )}
 
-      <button className="view-more-btn mx-auto text-center">View more</button>
+      {/* <button className="view-more-btn mx-auto text-center">View more</button> */}
     </div>
   );
 };

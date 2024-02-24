@@ -13,7 +13,7 @@
 .mc-tab-container {
   width: 189px;
   height: 45px;
-  border-radius: 100px;
+  border-radius: 15px !important;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -29,14 +29,14 @@
 .mc-tab-container .mc-active-btn {
   width: 74px;
   height: 33px;
-  border-radius: 100px;
+  border-radius: 7px !important;
   background: #dd2e44;
 }
 
 .mc-tab-container .mc-dactive-btn {
   width: 74px;
   height: 33px;
-  border-radius: 100px;
+  border-radius: 7px !important;
 }
 
 .mc-sidebar {
@@ -56,7 +56,7 @@
 }
 
 .mc-sidebar-remove-container h1 {
-  color: #fff;
+  color: rgba(255, 255, 255, 1) !important;
   font-family: Lato;
   font-size: 15px;
   font-style: normal;
@@ -118,12 +118,15 @@
   margin: 0 auto;
   text-align: center;
 }
+.selected {
+  border: 1px solid rgba(253, 245, 22, 1);
+}
 
 .mc-btn-bg-visible {
   background-color: #0ab745 !important;
 }
 .mc-btn-bg-hide {
-  background-color: #ff003d !important;
+  background-color: rgba(183, 10, 10, 1) !important;
 }
 
 /* mc area */

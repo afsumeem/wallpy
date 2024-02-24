@@ -9,7 +9,9 @@ const UploadSidebar = ({ open }) => {
         <h2 className="mc-sidebar-top-title">Select Wallpapers</h2>
         <div className="upload-sc-btn-container mt-3">
           <button>Select All</button>
-          <button>Clear Selection</button>
+          <button style={{ color: "rgba(255, 255, 255, 0.5)" }}>
+            Clear Selection
+          </button>
         </div>
 
         <div className="mt-4">
@@ -17,7 +19,7 @@ const UploadSidebar = ({ open }) => {
           <div className="choose-type-btn-container mt-3">
             <button>Illustration</button>
             <button>AI</button>
-            <button>Photography</button>
+            <button className="px-1">Photography</button>
           </div>
         </div>
         <div className="mt-4">
@@ -44,7 +46,7 @@ const UploadSidebar = ({ open }) => {
           <h1 className="upload-sidebar-btn-title text-center">TAGS</h1>
           <div className="upload-sidebar-tags-container mt-3 position-relative ">
             <input
-              className="px-2 text-white"
+              className="px-2 text-white rounded-3"
               type="text"
               placeholder="Add tags here..."
             />
@@ -60,14 +62,14 @@ const UploadSidebar = ({ open }) => {
           <h1 className="upload-sidebar-btn-title text-center">
             Source & Author
           </h1>
-          <div className="upload-sidebar-tags-container mt-3">
+          <div className="upload-sidebar-tags-container mt-3 ">
             <input
-              className="px-2"
+              className="px-2 rounded-3"
               type="text"
               placeholder="Source (Optional)"
             />
             <input
-              className="px-2 mt-4"
+              className="px-2 mt-4 rounded-3"
               type="text"
               placeholder="Author (Optional)"
             />

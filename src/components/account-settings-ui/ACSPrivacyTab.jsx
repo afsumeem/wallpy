@@ -43,12 +43,12 @@ const ACSPrivacyTab = () => {
         <button className="profile-save-btn">Save</button>
       </div>
 
-      <hr className="my-5" style={{ border: "1px solid #5A5A5A" }} />
-      <div className="d-flex flex-column align-items-center justify-content-center gap-5 mt-5">
+      <hr className="mt-5 mb-4" style={{ border: "1px solid #5A5A5A" }} />
+      <div className="d-flex flex-column align-items-center justify-content-center gap-4 mt-3">
         <h1 className="delete-account-title">Delete Account</h1>
         <button className="profile-delete-btn">Delete</button>
       </div>
-      <p className="profile-p text-center mt-5">
+      <p className="profile-p text-center mt-4">
         Please be aware that account deletion is a permanent action, and it will
         result in the complete erasure of all your data from our servers.
       </p>

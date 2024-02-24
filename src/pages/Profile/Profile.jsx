@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
 import { iMagnifierG, iSearch } from "../../utils/icons/global_icons";
-
+import { iClose } from "../../utils/icons/global_icons";
 import img1 from "../../assets/images/profile/img1.png";
 import img2 from "../../assets/images/profile/img2.png";
 import img3 from "../../assets/images/profile/img3.png";
@@ -47,6 +47,15 @@ const Profile = () => {
   const { open, setOpen } = useContext(AuthContext);
   const [tab, setTab] = useState(0);
   const [msgStep, setMsgStep] = useState(0);
+  const [showShareWallpaper, setShowShareWallpaper] = useState(false);
+
+  const handleOpenShare = () => {
+    setShowShareWallpaper(true);
+  };
+
+  const handleCloseShare = () => {
+    setShowShareWallpaper(false);
+  };
   return (
     <div className="wallpaper_bg">
       <HeaderDrawer />
@@ -138,7 +147,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className="profileDetail d-flex justify-content-between align-items-start">
+          <div className="profileDetail d-flex justify-content-between align-items-start position-relative">
             <div></div>
             <div className="update_follower d-flex justify-content-between align-items-center flex-wrap gap-5 d-none d-lg-inline-flex">
               <p className="fontBak">
@@ -169,7 +178,7 @@ const Profile = () => {
               </p>
             </div>
           </div> */}
-            <div className="d-flex flex-column gap-3">
+            <div className="d-flex flex-column gap-3 ">
               <div className="d-flex justify-content-end align-items-center gap-2">
                 {/* <div className="followBtn d-none d-md-block">
                   <button className="fontBak">Follow</button>
@@ -322,7 +331,7 @@ const Profile = () => {
                   </div>
                   {/* <!-- Message Modal End --> */}
                 </div>
-                <button className="msgBtn">
+                <button className="msgBtn" onClick={handleOpenShare}>
                   <span>
                     <svg
                       width="15"
@@ -361,6 +370,43 @@ const Profile = () => {
                   </span>
                 </button>
               </div>
+
+              {/* wallpaper share */}
+              {showShareWallpaper && (
+                <div className="shareProfile shareProfileContainer d-flex flex-column gap-3 align-items-center">
+                  <div className="d-flex justify-content-between">
+                    <p className="fontBak">Share this wallpaper with friends</p>
+                    <button className=" px-3" onClick={handleCloseShare}>
+                      {iClose}
+                    </button>
+                  </div>
+                  <div className="d-flex justify-content-between align-items-center gap-4">
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={twitter} alt="Twitter" />X
+                    </button>
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={fb} alt="Facebook" />
+                      Facebook
+                    </button>
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={whatsapp} alt="WhatsApp" />
+                      WhatsApp
+                    </button>
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={discord} alt="Discord" />
+                      Discord
+                    </button>
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={email} alt="Email" />
+                      Email
+                    </button>
+                    <button className="d-flex flex-column gap-1 align-items-center">
+                      <img src={link} alt="Copy Link" />
+                      Copy Link
+                    </button>
+                  </div>
+                </div>
+              )}
               {/*  */}
             </div>
           </div>
