@@ -60,7 +60,7 @@ const Header = () => {
   return (
     <div className="container position-relative w-100">
       <div className="d-flex justify-content-between align-items-center my-3 w-100">
-        <div className="d-flex align-items-center flex-grow gap-2 gap-sm-4 w-75">
+        <div className="d-flex align-items-center flex-grow gap-2 gap-sm-4 w-100">
           <Link className={logo ? "d-sm-block d-none brand" : "brand"} to="/">
             WPS
           </Link>
