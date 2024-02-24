@@ -50,7 +50,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 20px;
   color: #fff;
   font-family: Lato;
   font-size: 16px;
@@ -100,17 +100,17 @@
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
 @media only screen and (max-width: 425px) {
   .cmr-container .cmr-title {
-    font-size: 20px;
+    font-size: 15px;
   }
   .cmr-content-container span {
     font-size: 12px !important;
   }
   .cmr-content-container {
     font-size: 12px !important;
-    padding-top: 22px !important;
+    padding-top: 12px !important;
   }
   .pb_54_22 {
-    padding-bottom: 22px !important;
+    padding-bottom: 12px !important;
   }
   .cmr-content-categories,
   .cmr-content-categories p {

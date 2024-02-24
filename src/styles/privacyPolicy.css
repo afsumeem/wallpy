@@ -2,7 +2,7 @@
   max-width: 1396px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 30px;
   color: #fff;
   font-family: Lato;
   font-size: 16px;
@@ -10,7 +10,7 @@
   font-weight: 400;
   line-height: normal;
   text-align: left;
-  margin-top: 83px;
+  /* margin-top: 83px; */
 }
 
 .pp-container .pp-title {

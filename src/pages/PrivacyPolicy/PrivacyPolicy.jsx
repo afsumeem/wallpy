@@ -13,7 +13,9 @@ const PrivacyPolicy = () => {
         <hr style={{ border: "1px solid #5A5A5A" }} />
 
         <div className="pp-content-container">
-          <h6 className="">Privacy Policy for The Wallpaper Society</h6>
+          <h6 className="" style={{ fontSize: "12px", fontWeight: "700" }}>
+            Privacy Policy for The Wallpaper Society
+          </h6>
           <p className="mt-4">Last Updated: [10/26/2023] </p>
 
           <p className="mt-4">
@@ -26,7 +28,9 @@ const PrivacyPolicy = () => {
             we collect, use, and protect your data.
           </p>
 
-          <h6 className="mt-3">Information We Collect </h6>
+          <h6 className="mt-3" style={{ fontSize: "12px", fontWeight: "700" }}>
+            Information We Collect{" "}
+          </h6>
 
           <p className="mt-3">We collect the following information:</p>
 
@@ -41,7 +45,9 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          <h6 className="mt-4">How We Use Your Information</h6>
+          <h6 className="mt-4" style={{ fontSize: "12px", fontWeight: "700" }}>
+            How We Use Your Information
+          </h6>
           <p className="mt-4">
             We use the collected data for the following purposes:
           </p>
@@ -52,18 +58,21 @@ const PrivacyPolicy = () => {
             <li>To maintain the security and functionality of the website.</li>
           </ul>
 
-          <p className="mt-4">
+          <p className="mt-4" style={{ fontSize: "12px", fontWeight: "700" }}>
             <span>Data Sharing:</span> We do not share, collect, or sell any
             user data.
           </p>
           <p className="mt-4">
-            <span>Data Protection: </span>The security of your information is
-            important to us and we will use reasonable security measures to
-            prevent the loss, misuse or unauthorized alteration of your
-            information under our control. However, given the inherent risks, we
-            cannot guarantee absolute security and consequently, we cannot
-            ensure or warrant the security of any information you transmit to us
-            and you do so at your own risk.
+            <span style={{ fontSize: "12px", fontWeight: "700" }}>
+              Data Protection:{" "}
+            </span>
+            The security of your information is important to us and we will use
+            reasonable security measures to prevent the loss, misuse or
+            unauthorized alteration of your information under our control.
+            However, given the inherent risks, we cannot guarantee absolute
+            security and consequently, we cannot ensure or warrant the security
+            of any information you transmit to us and you do so at your own
+            risk.
           </p>
           <p className="mt-4">
             <span>User Rights: </span> Users can request the deletion of their

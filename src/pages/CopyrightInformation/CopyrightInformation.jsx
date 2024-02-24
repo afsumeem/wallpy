@@ -16,7 +16,7 @@ const CopyrightInformation = () => {
 
         <div className="position-relative">
           <img src={banner} style={{ maxHeight: "294px" }} alt="" />
-          <div className="ci-img-overlay"></div>
+          {/* <div className="ci-img-overlay"></div> */}
         </div>
         <div className="ci-content-container">
           <p className="mt-3 mt-md-5">

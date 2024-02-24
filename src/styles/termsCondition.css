@@ -55,9 +55,9 @@
 .terms-condition-content-container p {
   color: #fff;
   font-family: Lato;
-  font-size: 20px !important;
+  font-size: 10px !important;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300 !important;
   line-height: normal;
   margin-top: 16px;
 }
@@ -80,7 +80,7 @@
     margin-top: 20px;
   }
   .table-content {
-    font-size: 12;
+    font-size: 12px !important;
   }
   .top-content {
     margin-top: 29px;
@@ -104,7 +104,7 @@
     margin-top: 20px;
   }
   .table-content {
-    font-size: 12;
+    font-size: 12px;
   }
   .top-content {
     margin-top: 29px;
